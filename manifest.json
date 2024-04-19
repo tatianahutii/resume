@@ -1,0 +1,21 @@
+{
+    "short_name": "TH",
+    "name": "Tetiana Hutii",
+    "icons": [
+      {
+        "src": "/assets/images/favicon-32x32.png",
+        "type": "image/png",
+        "sizes": "32x32"
+      },
+      {
+        "src": "/assets/images/favicon-96x96.png",
+        "type": "image/png",
+        "sizes": "96x96"
+      }
+    ],
+    "start_url": "/index.html",
+    "background_color": "white",
+    "display": "standalone",
+    "scope": "/",
+    "theme_color": "white"
+  }
