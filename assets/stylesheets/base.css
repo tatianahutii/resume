@@ -6,7 +6,9 @@
     background: #ff0
 }
 
-*,*:before,*:after {
+*,
+*:before,
+*:after {
     box-sizing: inherit
 }
 
@@ -17,28 +19,39 @@ html {
     box-sizing: border-box
 }
 
-html,body {
+html,
+body {
     margin: 0;
     line-height: 1.4285em;
-    color: rgba(0,0,0,.87)
+    color: rgba(0, 0, 0, .87)
 }
 
 body {
-    font-family: -apple-system,BlinkMacSystemFont,segoe ui,Roboto,Oxygen-Sans,Ubuntu,Cantarell,helvetica neue,sans-serif
+    font-family: -apple-system, BlinkMacSystemFont, segoe ui, Roboto, Oxygen-Sans, Ubuntu, Cantarell, helvetica neue, sans-serif
 }
 
-h1,h2,h3,h4,h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
     line-height: 1.28571429em;
     margin: 0 0 1rem;
     font-weight: 700;
     padding: 0
 }
 
-h1:last-child,h2:last-child,h3:last-child,h4:last-child,h5:last-child {
+h1:last-child,
+h2:last-child,
+h3:last-child,
+h4:last-child,
+h5:last-child {
     margin-bottom: 0
 }
 
-h1,h2,h3 {
+h1,
+h2,
+h3 {
     text-transform: uppercase
 }
 
@@ -106,7 +119,8 @@ small {
     font-size: 80%
 }
 
-ul,ol {
+ul,
+ol {
     list-style: none outside none;
     padding-left: 1.5em;
     margin: 0
@@ -161,7 +175,8 @@ a {
     text-decoration: none
 }
 
-a[rel=external]:not(.label):hover,a.language:hover span {
+a[rel=external]:not(.label):hover,
+a.language:hover span {
     text-decoration: underline
 }
 
@@ -173,7 +188,8 @@ code {
     font-size: 95%
 }
 
-sub,sup {
+sub,
+sup {
     font-size: 75%;
     line-height: 0;
     position: relative;
@@ -192,14 +208,16 @@ img {
     border-style: none
 }
 
-button,input {
+button,
+input {
     font-family: inherit;
     font-size: 100%;
     line-height: 1.15;
     margin: 0
 }
 
-button,input {
+button,
+input {
     overflow: visible
 }
 
@@ -207,17 +225,20 @@ button {
     text-transform: none
 }
 
-button,[type=button] {
+button,
+[type=button] {
     -webkit-appearance: button;
     appearance: button
 }
 
-button::-moz-focus-inner,[type=button]::-moz-focus-inner {
+button::-moz-focus-inner,
+[type=button]::-moz-focus-inner {
     border-style: none;
     padding: 0
 }
 
-button:-moz-focusring,[type=button]:-moz-focusring {
+button:-moz-focusring,
+[type=button]:-moz-focusring {
     outline: 1px dotted ButtonText
 }
 
@@ -238,7 +259,7 @@ article {
 
 @media only screen and (min-width: 768px) and (max-width:991px) {
     article {
-        width:723px;
+        width: 723px;
         margin-top: calc((100% - 723px)/2);
         margin-bottom: calc((100% - 723px)/2)
     }
@@ -246,7 +267,7 @@ article {
 
 @media only screen and (min-width: 992px) and (max-width:1199px) {
     article {
-        width:933px;
+        width: 933px;
         margin-top: calc((100% - 933px)/2);
         margin-bottom: calc((100% - 933px)/2)
     }
@@ -254,7 +275,7 @@ article {
 
 @media only screen and (min-width: 1200px) {
     article {
-        width:1127px;
+        width: 1127px;
         margin-top: 5%;
         margin-bottom: 5%
     }
@@ -262,7 +283,7 @@ article {
 
 @media only screen and (min-width: 1600px) {
     article {
-        width:1440px;
+        width: 1440px;
         margin-top: 3%;
         margin-bottom: 3%
     }
@@ -272,7 +293,7 @@ article {
     position: relative;
     padding: 3em;
     background: #fff;
-    box-shadow: 0 10px 100px 0 rgba(34,36,38,.1);
+    box-shadow: 0 10px 100px 0 rgba(34, 36, 38, .1);
     transition: box-shadow .2s linear
 }
 
@@ -297,13 +318,15 @@ article {
 
 @media only screen {
     .page:hover {
-        box-shadow: 0 10px 100px 0 rgba(34,36,38,.3)
+        box-shadow: 0 10px 100px 0 rgba(34, 36, 38, .3)
     }
 }
 
 @media only screen and (max-width: 767px) {
-    .page,.page[style^=border-color] {
-        padding:0
+
+    .page,
+    .page[style^=border-color] {
+        padding: 0
     }
 
     .page[style^=border-color]:before {
@@ -317,7 +340,7 @@ article {
     flex-wrap: wrap;
     align-items: stretch;
     padding: 0;
-    display: block!important
+    display: block !important
 }
 
 .grid .grid {
@@ -332,13 +355,14 @@ article {
     flex-wrap: wrap;
     justify-content: inherit;
     align-items: stretch;
-    width: 100%!important;
+    width: 100% !important;
     padding: 0;
     padding-top: 1rem;
     padding-bottom: 1rem
 }
 
-.grid>.column:not(.row),.grid>.row>.column {
+.grid>.column:not(.row),
+.grid>.row>.column {
     position: relative;
     display: inline-block;
     width: 6.25%;
@@ -362,92 +386,159 @@ article {
     margin-bottom: 0
 }
 
-.grid>.column:only-child,.grid>.row>.column:only-child {
+.grid>.column:only-child,
+.grid>.row>.column:only-child {
     width: 100%
 }
 
-.grid>.row>[class*="one wide"].column,.grid>.column.row>[class*="one wide"].column,.grid>[class*="one wide"].column,.column.grid>[class*="one wide"].column {
-    width: 6.25%!important
+.grid>.row>[class*="one wide"].column,
+.grid>.column.row>[class*="one wide"].column,
+.grid>[class*="one wide"].column,
+.column.grid>[class*="one wide"].column {
+    width: 6.25% !important
 }
 
-.grid>.row>[class*="two wide"].column,.grid>.column.row>[class*="two wide"].column,.grid>[class*="two wide"].column,.column.grid>[class*="two wide"].column {
-    width: 12.5%!important
+.grid>.row>[class*="two wide"].column,
+.grid>.column.row>[class*="two wide"].column,
+.grid>[class*="two wide"].column,
+.column.grid>[class*="two wide"].column {
+    width: 12.5% !important
 }
 
-.grid>.row>[class*="three wide"].column,.grid>.column.row>[class*="three wide"].column,.grid>[class*="three wide"].column,.column.grid>[class*="three wide"].column {
+.grid>.row>[class*="three wide"].column,
+.grid>.column.row>[class*="three wide"].column,
+.grid>[class*="three wide"].column,
+.column.grid>[class*="three wide"].column {
     width: 25% !important
 }
 
-.grid>.row>[class*="four wide"].column,.grid>.column.row>[class*="four wide"].column,.grid>[class*="four wide"].column,.column.grid>[class*="four wide"].column {
-    width: 25%!important
+.grid>.row>[class*="four wide"].column,
+.grid>.column.row>[class*="four wide"].column,
+.grid>[class*="four wide"].column,
+.column.grid>[class*="four wide"].column {
+    width: 25% !important
 }
 
-.grid>.row>[class*="five wide"].column,.grid>.column.row>[class*="five wide"].column,.grid>[class*="five wide"].column,.column.grid>[class*="five wide"].column {
-    width: 31.25%!important
+.grid>.row>[class*="five wide"].column,
+.grid>.column.row>[class*="five wide"].column,
+.grid>[class*="five wide"].column,
+.column.grid>[class*="five wide"].column {
+    width: 31.25% !important
 }
 
-.grid>.row>[class*="six wide"].column,.grid>.column.row>[class*="six wide"].column,.grid>[class*="six wide"].column,.column.grid>[class*="six wide"].column {
-    width: 37.5%!important
+.grid>.row>[class*="six wide"].column,
+.grid>.column.row>[class*="six wide"].column,
+.grid>[class*="six wide"].column,
+.column.grid>[class*="six wide"].column {
+    width: 37.5% !important
 }
 
-.grid>.row>[class*="seven wide"].column,.grid>.column.row>[class*="seven wide"].column,.grid>[class*="seven wide"].column,.column.grid>[class*="seven wide"].column {
-    width: 43.75%!important
+.grid>.row>[class*="seven wide"].column,
+.grid>.column.row>[class*="seven wide"].column,
+.grid>[class*="seven wide"].column,
+.column.grid>[class*="seven wide"].column {
+    width: 43.75% !important
 }
 
-.grid>.row>[class*="eight wide"].column,.grid>.column.row>[class*="eight wide"].column,.grid>[class*="eight wide"].column,.column.grid>[class*="eight wide"].column {
-    width: 50%!important
+.grid>.row>[class*="eight wide"].column,
+.grid>.column.row>[class*="eight wide"].column,
+.grid>[class*="eight wide"].column,
+.column.grid>[class*="eight wide"].column {
+    width: 50% !important
 }
 
-.grid>.row>[class*="nine wide"].column,.grid>.column.row>[class*="nine wide"].column,.grid>[class*="nine wide"].column,.column.grid>[class*="nine wide"].column {
-    width: 56.25%!important
+.grid>.row>[class*="nine wide"].column,
+.grid>.column.row>[class*="nine wide"].column,
+.grid>[class*="nine wide"].column,
+.column.grid>[class*="nine wide"].column {
+    width: 56.25% !important
 }
 
-.grid>.row>[class*="ten wide"].column,.grid>.column.row>[class*="ten wide"].column,.grid>[class*="ten wide"].column,.column.grid>[class*="ten wide"].column {
-    width: 62.5%!important
+.grid>.row>[class*="ten wide"].column,
+.grid>.column.row>[class*="ten wide"].column,
+.grid>[class*="ten wide"].column,
+.column.grid>[class*="ten wide"].column {
+    width: 62.5% !important
 }
 
-.grid>.row>[class*="eleven wide"].column,.grid>.column.row>[class*="eleven wide"].column,.grid>[class*="eleven wide"].column,.column.grid>[class*="eleven wide"].column {
-    width: 68.75%!important
+.grid>.row>[class*="eleven wide"].column,
+.grid>.column.row>[class*="eleven wide"].column,
+.grid>[class*="eleven wide"].column,
+.column.grid>[class*="eleven wide"].column {
+    width: 68.75% !important
 }
 
-.grid>.row>[class*="twelve wide"].column,.grid>.column.row>[class*="twelve wide"].column,.grid>[class*="twelve wide"].column,.column.grid>[class*="twelve wide"].column {
-    width: 75%!important
+.grid>.row>[class*="twelve wide"].column,
+.grid>.column.row>[class*="twelve wide"].column,
+.grid>[class*="twelve wide"].column,
+.column.grid>[class*="twelve wide"].column {
+    width: 75% !important
 }
 
-.grid>.row>[class*="thirteen wide"].column,.grid>.column.row>[class*="thirteen wide"].column,.grid>[class*="thirteen wide"].column,.column.grid>[class*="thirteen wide"].column {
-    width: 75%!important
+.grid>.row>[class*="thirteen wide"].column,
+.grid>.column.row>[class*="thirteen wide"].column,
+.grid>[class*="thirteen wide"].column,
+.column.grid>[class*="thirteen wide"].column {
+    width: 75% !important
 }
 
-.grid>.row>[class*="fourteen wide"].column,.grid>.column.row>[class*="fourteen wide"].column,.grid>[class*="fourteen wide"].column,.column.grid>[class*="fourteen wide"].column {
-    width: 87.5%!important
+.grid>.row>[class*="fourteen wide"].column,
+.grid>.column.row>[class*="fourteen wide"].column,
+.grid>[class*="fourteen wide"].column,
+.column.grid>[class*="fourteen wide"].column {
+    width: 87.5% !important
 }
 
-.grid>.row>[class*="fifteen wide"].column,.grid>.column.row>[class*="fifteen wide"].column,.grid>[class*="fifteen wide"].column,.column.grid>[class*="fifteen wide"].column {
-    width: 93.75%!important
+.grid>.row>[class*="fifteen wide"].column,
+.grid>.column.row>[class*="fifteen wide"].column,
+.grid>[class*="fifteen wide"].column,
+.column.grid>[class*="fifteen wide"].column {
+    width: 93.75% !important
 }
 
-.grid>.row>[class*="sixteen wide"].column,.grid>.column.row>[class*="sixteen wide"].column,.grid>[class*="sixteen wide"].column,.column.grid>[class*="sixteen wide"].column {
-    width: 100%!important
+.grid>.row>[class*="sixteen wide"].column,
+.grid>.column.row>[class*="sixteen wide"].column,
+.grid>[class*="sixteen wide"].column,
+.column.grid>[class*="sixteen wide"].column {
+    width: 100% !important
 }
 
-[class*="center aligned"].grid>.column,[class*="center aligned"].grid>.row>.column,.grid>[class*="center aligned"].row>.column,.grid>[class*="center aligned"].column.column,.grid>.row>[class*="center aligned"].column.column {
+[class*="center aligned"].grid>.column,
+[class*="center aligned"].grid>.row>.column,
+.grid>[class*="center aligned"].row>.column,
+.grid>[class*="center aligned"].column.column,
+.grid>.row>[class*="center aligned"].column.column {
     text-align: center
 }
 
 @media only screen and (max-width: 767px) {
-    .stackable.grid>.row>.wide.column,.stackable.grid>.wide.column,.stackable.grid>.column.grid>.column,.stackable.grid>.column.row>.column,.stackable.grid>.row>.column,.stackable.grid>.column:not(.row),.grid>.stackable.row>.column {
-        width:100%!important;
-        padding: 1em!important
+
+    .stackable.grid>.row>.wide.column,
+    .stackable.grid>.wide.column,
+    .stackable.grid>.column.grid>.column,
+    .stackable.grid>.column.row>.column,
+    .stackable.grid>.row>.column,
+    .stackable.grid>.column:not(.row),
+    .grid>.stackable.row>.column {
+        width: 100% !important;
+        padding: 1em !important
     }
 }
 
-[class*="mobile only"].grid,.grid>[class*="mobile only"].row,.grid>[class*="mobile only"].column,.grid>.row>[class*="mobile only"].column {
+[class*="mobile only"].grid,
+.grid>[class*="mobile only"].row,
+.grid>[class*="mobile only"].column,
+.grid>.row>[class*="mobile only"].column {
     display: none
 }
 
 @media only screen and (max-width: 767px) {
-    [class*="mobile only"].grid,.grid>[class*="mobile only"].row,.grid>[class*="mobile only"].column,.grid>.row>[class*="mobile only"].column {
-        display:block
+
+    [class*="mobile only"].grid,
+    .grid>[class*="mobile only"].row,
+    .grid>[class*="mobile only"].column,
+    .grid>.row>[class*="mobile only"].column {
+        display: block
     }
 }
 
@@ -468,7 +559,7 @@ article {
 
 @media only screen and (max-width: 1199px) {
     .avatar-wrapper {
-        padding:0
+        padding: 0
     }
 }
 
@@ -489,7 +580,7 @@ article {
 .labels>.label {
     background-color: #e8e8e8;
     border-radius: .28571429rem;
-    color: rgba(0,0,0,.6);
+    color: rgba(0, 0, 0, .6);
     display: block;
     float: left;
     font-size: .78571429rem;
@@ -556,8 +647,11 @@ article {
 }
 
 @media only screen and (max-width: 767px) {
-    .name,.job,.contacts {
-        text-align:center
+
+    .name,
+    .job,
+    .contacts {
+        text-align: center
     }
 
     .contacts li {
@@ -567,7 +661,7 @@ article {
 
 @media only screen and (max-width: 1199px) {
     .contacts {
-        margin-top:1em;
+        margin-top: 1em;
         flex-direction: column
     }
 }
@@ -593,7 +687,7 @@ li.highlighted {
 }
 
 li.bordered {
-    border: 1px solid rgba(0,0,0,.125);
+    border: 1px solid rgba(0, 0, 0, .125);
     border-radius: 4px;
     padding: .5em;
     transition: all .2s linear
@@ -603,7 +697,8 @@ li.bordered:hover {
     background: #fafafa
 }
 
-li.bordered>ul>li.details>div,li.bordered>ul>details>div {
+li.bordered>ul>li.details>div,
+li.bordered>ul>details>div {
     padding: .5em .5em 0 2em;
     border-top: 1px solid #e0e0e0;
     margin-top: .5em;
@@ -646,10 +741,12 @@ li.bordered>ul>li.details>div,li.bordered>ul>details>div {
 }
 
 @media print {
-    .page,.page[style] {
+
+    .page,
+    .page[style] {
         padding: 0;
         box-shadow: none;
-        border-color: transparent!important
+        border-color: transparent !important
     }
 
     .grid {
@@ -673,9 +770,22 @@ li.bordered>ul>li.details>div,li.bordered>ul>details>div {
     }
 }
 
+/* Credits */
+.credits {
+    text-align: right;
+    padding: 0.5em;
+    line-height: 1em;
+    opacity: 0.75;
+    transition: opacity 0.2s linear;
+}
+
+.credits:hover {
+    opacity: 1;
+}
+
 @media only screen and (max-width: 767px) {
     .credits {
-        display:none
+        display: none;
     }
 }
 
@@ -686,7 +796,9 @@ header {
     top: 0;
     left: 0;
     height: 2em;
-    width: 100%
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
 }
 
 header+main {
@@ -715,7 +827,7 @@ footer {
 
 @media only screen and (max-width: 767px) {
     header {
-        height:auto;
+        height: auto;
         position: relative
     }
 
@@ -735,7 +847,9 @@ footer {
 }
 
 @media print {
-    header,footer {
+
+    header,
+    footer {
         display: none
     }
 
@@ -750,19 +864,19 @@ footer {
 
 @media only screen and (max-width: 767px) {
     .wave {
-        width:5%
+        width: 5%
     }
 }
 
 @media only screen and (min-width: 768px) and (max-width:1199px) {
     .wave {
-        width:4%
+        width: 4%
     }
 }
 
 @media only screen and (min-width: 1200px) {
     .wave {
-        width:3%
+        width: 3%
     }
 }
 
